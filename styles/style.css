@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;600&display=swap');
 
-html, body {
+html,
+html {
+    scroll-behavior: smooth;
+}
+body {
     overflow-x: hidden;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -51,6 +57,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 82px;
+    min-height: 100vh;
 }
 
 .apresentacao__conteudo {

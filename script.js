@@ -36,15 +36,17 @@ links.forEach(link => {
 // Ativar animação ao rolar a página
 const elementosAnimados = document.querySelectorAll('.scroll-animado');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('ativo');
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.1
-});
+//const observer = new IntersectionObserver(entries => {
+//  entries.forEach(entry => {
+//   if (entry.isIntersecting) {
+//      entry.target.classList.add('ativo');
+//      observer.unobserve(entry.target);
+//    }
+//  });
+//}, {
+//  threshold: 0.1
+//});
 
-elementosAnimados.forEach(el => observer.observe(el));
+//elementosAnimados.forEach(el => observer.observe(el));
+
+elementosAnimados.forEach(el => el.classList.add('ativo'));
